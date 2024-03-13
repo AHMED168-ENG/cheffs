@@ -1,4 +1,4 @@
-import { Box, Grid, NoSsr } from "@mui/material";
+import { Box, Grid, NoSsr, Typography } from "@mui/material";
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { styled, useTheme } from '@mui/material/styles'
@@ -15,6 +15,12 @@ import RestaurantCoupon from '../RestaurantCoupon'
 import { RestaurantCouponStack } from '../restaurant-details.style'
 import { settings } from '../CouponSettings'
 import RestaurantAnnouncementMessege from '../RestaurantAnnouncementMessege'
+import FoodNavigation from "../foodSection/FoodNavigation";
+import CustomContainer from "@/components/container";
+import { CustomStackFullWidth } from "@/styled-components/CustomStyles.style";
+import SearchFilterTag from "@/components/home/Search-filter-tag/SearchFilterTag";
+import { useRouter } from "next/router";
+import { t } from "i18next";
 
 const StyledImageBox = styled(Box)(({ theme, height, objectfit }) => ({
     height: height,
@@ -52,7 +58,8 @@ const TopBanner = ({ details }) => {
             onError: onErrorResponse,
         }
     )
-
+    const router = useRouter();
+    const { query, page, restaurantType, tags } = router.query;
     return (
         <>
           <NoSsr>

@@ -87,7 +87,7 @@ const LandingPage = (props) => {
                         ?.react_promotional_banner_image_url
                 }
             />
-            <LinkSection
+            {/* <LinkSection
                 self_registration_restaurant={
                     landingPageData?.restaurant_section
                 }
@@ -102,7 +102,7 @@ const LandingPage = (props) => {
                 deliveryman_registration_image_url={
                     landingPageData?.base_urls?.react_delivery_section_image_url
                 }
-            />
+            /> */}
             {landingPageData?.download_app_section
                 ?.react_download_apps_banner_image && (
                 <DiscountBanner

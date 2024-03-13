@@ -29,16 +29,16 @@ export const RouteLinksData = [
     //     value: 'my_wallet',
     //     link: '/customer/wallets',
     // },
-    {
-        name: 'Become a restaurant owner',
-        value: 'restaurant_owner',
-        link: `${process.env.NEXT_PUBLIC_BASE_URL}/restaurant/apply`,
-    },
-    {
-        name: 'Become a delivery man',
-        value: 'delivery_man',
-        link: `${process.env.NEXT_PUBLIC_BASE_URL}/deliveryman/apply`,
-    },
+    // {
+    //     name: 'Become a restaurant owner',
+    //     value: 'restaurant_owner',
+    //     link: `${process.env.NEXT_PUBLIC_BASE_URL}/restaurant/apply`,
+    // },
+    // {
+    //     name: 'Become a delivery man',
+    //     value: 'delivery_man',
+    //     link: `${process.env.NEXT_PUBLIC_BASE_URL}/deliveryman/apply`,
+    // },
     {
         name: 'Profile',
         value: 'profile',

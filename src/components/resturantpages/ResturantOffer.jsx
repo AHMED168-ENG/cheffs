@@ -75,7 +75,7 @@ const ResturantOffer = () => {
         setAlignment(newAlignment)
     }
 
-    const orangeColor = '#EF7822'
+    const orangeColor = '#ef5d22'
     const orangeColor2 = '#ff903f'
     const PrimaryButton = styled(Button)(({ theme }) => ({
         color: '#fff',
@@ -129,7 +129,7 @@ const ResturantOffer = () => {
                                     <IconButton className="loc__button">
                                         <AddLocationIcon
                                             sx={{
-                                                color: '#EF7822',
+                                                color: '#ef5d22',
                                                 display: {
                                                     xs: 'inline',
                                                     md: 'none',
@@ -165,7 +165,7 @@ const ResturantOffer = () => {
                                     <IconButton className="loc__button">
                                         <AddLocationIcon
                                             sx={{
-                                                color: '#EF7822',
+                                                color: '#ef5d22',
                                                 display: {
                                                     xs: 'none',
                                                     md: 'inline',
@@ -696,7 +696,7 @@ const ResturantOffer = () => {
                             <Link
                                 sx={{
                                     color: 'White',
-                                    background: '#EF7822',
+                                    background: '#ef5d22',
                                     borderRadius: '10px',
                                     padding: '2px 10px 2px 10px',
                                     textAlign: 'center',

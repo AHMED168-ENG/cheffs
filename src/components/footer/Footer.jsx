@@ -34,7 +34,7 @@ const Footer = ({ languageDirection }) => {
 
     return (
         <>
-            <FooterTop landingPageData={landingPageData} />
+            {/* <FooterTop landingPageData={landingPageData} /> */}
             <StyledFooterBackground router={router.pathname}>
                 <CustomStackFullWidth
                     height="100%"

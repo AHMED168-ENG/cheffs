@@ -1032,13 +1032,13 @@ const CheckoutPage = () => {
                                         handleChange={handleCutlery}
                                     />
                                 )}
-                            {orderType !== 'take_away' && (
+                            {/* {orderType !== 'take_away' && (
                                 <ItemSelectWithChip
                                     title="If Any product is not available"
                                     data={productUnavailableData}
                                     handleChange={handleItemUnavailableNote}
                                 />
-                            )}
+                            )} */}
                             {orderType !== 'take_away' && (
                                 <ItemSelectWithChip
                                     title="Add More Delivery Instruction"

@@ -57,7 +57,7 @@ const AddressPage = ({
                     <IconButton onClick={handleOpen}>
                         <img src={deleteImg.src}/>
                         {/*<DeleteIcon*/}
-                        {/*    sx={{ fontSize: '14px', color: '#EF7822' }}*/}
+                        {/*    sx={{ fontSize: '14px', color: '#ef5d22' }}*/}
                         {/*/>*/}
                     </IconButton>{' '}
                 </Typography>

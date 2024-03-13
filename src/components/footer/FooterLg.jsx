@@ -286,10 +286,10 @@ const FooterLg = (props) => {
                         <Grid container>
                             <Grid item xs={12} sm={12} md={5}>
                                 {isAppUrlExist && <DownloadComponent />}
-                                <LetsConnect
+                                {/* <LetsConnect
                                     languageDirection={props?.languageDirection}
                                     web="web"
-                                />
+                                /> */}
                             </Grid>
                             <Grid item xs={12} sm={4} md={5}>
                                 <Grid container>

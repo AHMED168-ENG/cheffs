@@ -299,7 +299,7 @@ export const SearchIconWrapper = styled('div')(
 export const StyledInputBase = styled(InputBase)(({ theme, width }) => ({
     color: 'inherit',
     width: '120px',
-    border: '2px solid #EF7822',
+    border: '2px solid #ef5d22',
     padding: '5px 0',
     marginLeft: '5px',
     borderRadius: '5px',
@@ -325,7 +325,7 @@ export const SearchInputBase = styled(InputBase)(({ theme }) => ({
 }))
 export const Logo = styled('div')(({ theme, height, width }) => ({
     width: width,
-    height: '24px',
+    height: '40px',
     justifyContent: 'center',
     maxWidth: '100px',
     position: 'relative',
@@ -340,7 +340,7 @@ export const CustomBoxNav = styled(Box)(({ theme, isSmall }) => ({
     // display: isSmall ? 'none' : 'inline',
     flexGrow: 1,
 }))
-export const CustomLink = styled(Link)(({ theme, color }) => ({
+export const CustomLink = styled(Link)(({ theme , color }) => ({
     color: color ? color : 'primary.main',
     cursor: 'pointer',
     fontWeight: '400',

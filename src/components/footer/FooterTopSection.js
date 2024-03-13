@@ -43,7 +43,7 @@ const FooterTopSection = () => {
     return (
         <RTL direction={languageDirection}>
             <CustomStackFullWidth spacing={4}>
-                <SocialLinks global={global} />
+                {/* <SocialLinks global={global} /> */}
                 <CustomStackFullWidth
                     spacing={2}
                     alignItems="center"

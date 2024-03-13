@@ -34,7 +34,7 @@ MainApi.interceptors.request.use(function (config) {
     if (zoneId) config.headers.zoneId = zoneId
     if (token) config.headers.authorization = `Bearer ${token}`
     if (language) config.headers['X-localization'] = language
-    if (hostname) config.headers['origin'] = hostname
+    if (hostname) config.headers['origin'] = "*"
     config.headers['X-software-id'] = software_id
 
     return config

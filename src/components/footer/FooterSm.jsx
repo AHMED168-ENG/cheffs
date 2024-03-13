@@ -43,7 +43,7 @@ const FooterSm = (props) => {
                                     />
                                 </Link>
                                 <DownloadComponent className="download-component" />
-                                <LetsConnect />
+                                {/* <LetsConnect /> */}
                             </Grid>
                             <Grid item xs={12} md={3} sx={{ mt: 3 }}>
                                 <Box textAlign={'center'}>
@@ -71,25 +71,25 @@ const FooterSm = (props) => {
                                         justifyContent={'center'}
                                     >
                                         <IconButton
-                                            sx={{ color: '#EF7822' }}
+                                            sx={{ color: '#ef5d22' }}
                                             aria-label="Facebook"
                                         >
                                             <FacebookIcon />
                                         </IconButton>
                                         <IconButton
-                                            sx={{ color: '#EF7822' }}
+                                            sx={{ color: '#ef5d22' }}
                                             aria-label="Instagram"
                                         >
                                             <InstagramIcon />
                                         </IconButton>
                                         <IconButton
-                                            sx={{ color: '#EF7822' }}
+                                            sx={{ color: '#ef5d22' }}
                                             aria-label="LinkedIn"
                                         >
                                             <LinkedInIcon />
                                         </IconButton>
                                         <IconButton
-                                            sx={{ color: '#EF7822' }}
+                                            sx={{ color: '#ef5d22' }}
                                             aria-label="Twitter"
                                         >
                                             <TwitterIcon />

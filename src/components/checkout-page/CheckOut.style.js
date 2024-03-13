@@ -62,7 +62,7 @@ export const SaveAddressBox = styled(Box)(() => ({
 }))
 
 export const AddNewButton = styled(Button)(() => ({
-    color: '#EF7822',
+    color: '#ef5d22',
     fontSize: '14px',
     fontWeight: '700',
     background: 'rgba(239, 120, 34, 0.1)',
@@ -114,7 +114,7 @@ export const CouponTitle = styled(Typography)(({ theme }) => ({
 }))
 
 export const CouponButton = styled(LoadingButton)(({ theme }) => ({
-    // background: '#EF7822',
+    // background: '#ef5d22',
     // color: 'white',
     fontSize: '14px',
     height: '30px',
@@ -170,7 +170,7 @@ export const ConditionTypography = styled(Typography)(() => ({
     paddingBottom: '20px',
 }))
 export const PlaceOrderButton = styled(Button)(() => ({
-    // background: '#EF7822',
+    // background: '#ef5d22',
     borderRadius: '5px',
     border: '1px solid rgba(239, 120, 34, 0.3)',
     // color: 'white',

@@ -41,7 +41,7 @@ export default function Filter({ setPageLimit, page_limit, type, setType }) {
                         paddingTop: '15px',
                     }}
                 >
-                    {t('We found')} <span style={{ color: '#EF7822' }}>25</span>{' '}
+                    {t('We found')} <span style={{ color: '#ef5d22' }}>25</span>{' '}
                     {t('food')}
                     {t('for you ')}
                 </Typography>

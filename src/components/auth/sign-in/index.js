@@ -80,6 +80,7 @@ const SignInPage = ({
                         setJwtToken,setUserInfo, handleSuccess,setMedium
 }) => {
     const [showPassword, setShowPassword] = useState(false)
+    const [showEmail, setShowEmail] = useState(false)
     // const [profileData,setProfileData]=useState({})
     const { t } = useTranslation()
     // const [tempToken,setTempToken]=useState("")
@@ -102,13 +103,17 @@ const SignInPage = ({
 
     const loginFormik = useFormik({
         initialValues: {
-            phone: userDatafor ? userDatafor.phone : '',
+            email: userDatafor ? userDatafor.email : '',
             password: userDatafor ? userDatafor.password : '',
+            phone: "+201143091311",
             tandc: false,
         },
         validationSchema: Yup.object({
-            phone: Yup.string()
-                .required(t('Please give a phone number'))
+            // phone: Yup.string()
+            //     .required(t('Please give a phone number'))
+            //     .min(10, 'number must be 10 digits'),
+            email: Yup.string()
+                .required(t('Please give a email number'))
                 .min(10, 'number must be 10 digits'),
             password: Yup.string()
                 .min(6, t('Password is too short - should be 6 chars minimum.'))
@@ -185,7 +190,7 @@ const SignInPage = ({
                         handleTokenAfterSignIn(response)
                         handleClose?.()
                     } else {
-                        setOtpData({ phone: values?.phone })
+                        setOtpData({ email: values?.email })
                         setMainToken(response)
                     }
                 } else {
@@ -269,16 +274,96 @@ const SignInPage = ({
                                 alignItems="center"
                                 spacing={{ xs: 2, md: 4 }}
                             >
-                                <CustomPhoneInput
+                                {/* <CustomPhoneInput
                                     value={loginFormik.values.phone}
                                     onHandleChange={handleOnChange}
                                     initCountry={global?.country}
                                     touched={loginFormik.touched.phone}
                                     errors={loginFormik.errors.phone}
                                     rtlChange="true"
-                                />
+                                /> */}
+                             
                                 <FormControl
+                                    variant="outlined"
+                                    fullWidth
+                                >
+                                    <InputLabel
+                                        required
+                                        sx={{
+                                            color: (theme) =>
+                                                theme.palette.neutral[600],
+                                            fontSize:"14px"
 
+                                        }}
+                                        htmlFor="outlined-adornment-email"
+                                    >
+                                        {t('email')}
+                                    </InputLabel>
+                                    <CustomSigninOutLine
+
+                                        required
+                                        type={
+                                            showEmail ? 'text' : 'email'
+                                        }
+                                        id="email"
+                                        name="email"
+                                        placeholder={t("Enter your email")}
+                                        value={loginFormik.values.email}
+                                        onChange={loginFormik.handleChange}
+                                        error={
+                                            loginFormik.touched.email &&
+                                            Boolean(loginFormik.errors.email)
+                                        }
+                                        helperText={
+                                            loginFormik.touched.email &&
+                                            loginFormik.errors.email
+                                        }
+                                        touched={loginFormik.touched.email}
+                                        endAdornment={
+                                            <InputAdornment position="end" >
+                                                <IconButton
+                                                    aria-label="toggle email visibility"
+                                                    onClick={() =>
+                                                        setShowEmail(
+                                                            (prevState) =>
+                                                                !prevState
+                                                        )
+                                                    }
+                                                    //   onMouseDown={handleMouseDownemail}
+                                                    edge="end"
+                                                >
+                                                    {showEmail ? (
+                                                        <Visibility sx={{width:"20px",height:"20px",color:theme=>alpha(theme.palette.neutral[400],.6)}} />
+                                                    ) : (
+                                                        <VisibilityOff sx={{width:"20px",height:"20px",color:theme=>alpha(theme.palette.neutral[400],.6)}} />
+                                                    )}
+                                                </IconButton>
+                                            </InputAdornment>
+                                        }
+                                        startAdornment={ <InputAdornment position="start" sx={{marginInlineEnd:"0px !important"}}>
+                                            <IconButton
+                                                aria-label="toggle email visibility"
+
+                                                edge="start"
+                                            >
+                                             {/* <LockIcon sx={{fontSize:"1.2rem"}}/> */}
+                                            </IconButton>
+                                        </InputAdornment>}
+                                        label="email"
+                                    />
+                                    {loginFormik.errors.email && (
+                                        <CustomTypography
+                                            variant="subtitle2"
+                                            sx={{
+                                                color: (theme) =>
+                                                    theme.palette.error.main,
+                                            }}
+                                        >
+                                            {loginFormik.errors.email}
+                                        </CustomTypography>
+                                    )}
+                                </FormControl>
+                                <FormControl
                                     variant="outlined"
                                     fullWidth
                                 >

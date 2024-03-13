@@ -67,8 +67,8 @@
         "yup": "^0.32.11"
     },
     "scripts": {
-        "dev": "next dev",
-        "build": "next build",
+        "dev": "next dev ",
+        "build": "next build", 
         "export": "next build && next export",
         "start": "NODE_ENV=production node server.js"
     },

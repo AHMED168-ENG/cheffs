@@ -84,7 +84,7 @@ const HeroSection = (props) => {
                                     justifyContent="center"
                                     alignItems="center"
                                 >
-                                    <HeroCardTypography
+                                    {/* <HeroCardTypography
                                         fontSize={{ xs: '24px', sm: '48px' }}
                                         fontWeight="700"
                                     >
@@ -94,7 +94,7 @@ const HeroSection = (props) => {
                                         fontSize={{ xs: '12px', sm: '18px' }}
                                     >
                                         {banner_section_subTitle}
-                                    </HeroCardTypography>
+                                    </HeroCardTypography> */}
                                     {!isXSmall && (
                                         <HeroLocationForm
                                             mobileview="false"
