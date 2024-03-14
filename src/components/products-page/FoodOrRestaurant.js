@@ -86,7 +86,7 @@ export default function FoodOrRestaurant({
                             }}
                         ></Typography>
                     </Typography>
-                    <Typography
+                    {/* <Typography
                         onClick={() => handleClick('restaurants')}
                         fontSize={{ xs: '16px', sm: '20px', md: '20px' }}
                         fontWeight={isRestaurant ? '700' : '400'}
@@ -107,7 +107,7 @@ export default function FoodOrRestaurant({
                                 marginTop: '4px',
                             }}
                         ></Typography>
-                    </Typography>
+                    </Typography> */}
                 </Stack>
             )}
         </>

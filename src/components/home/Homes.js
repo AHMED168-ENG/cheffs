@@ -205,20 +205,20 @@ const Homes = ({ configData }) => {
                         </CustomContainer>
                         <Box>
                             <FeatureCatagories height="70px" />
-                            <CustomContainer>
+                            {/* <CustomContainer>
                                 <VisitAgain />
-                            </CustomContainer>
+                            </CustomContainer> */}
                         </Box>
 
                         <CustomContainer>
-                            <DifferentFoodCompontent
+                            {/* <DifferentFoodCompontent
                                 campaignIsloading={campaignIsloading}
                                 isLoading={isLoading}
                                 isLoadingNearByPopularRestaurantData={isLoadingNearByPopularRestaurantData} />
-                            <NewRestaurant />
-                            <Cuisines />
+                            <NewRestaurant /> */}
+                            {/* <Cuisines />
                             <PromotionalBanner />
-                            <Restaurant />
+                            <Restaurant /> */}
                         </CustomContainer>
                     </>
                 )}
