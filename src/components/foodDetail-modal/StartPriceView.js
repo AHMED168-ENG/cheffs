@@ -41,10 +41,10 @@ const StartPriceView = (props) => {
         if (data?.restaurant_discount === 0) {
             return getAmount(
                 getConvertDiscount(
-                    data.discount,
-                    data.discount_type,
-                    data.price,
-                    data.restaurant_discount
+                    data?.discount,
+                    data?.discount_type,
+                    data?.price,
+                    data?.restaurant_discount
                 ),
                 currencySymbolDirection,
                 currencySymbol,
@@ -52,7 +52,7 @@ const StartPriceView = (props) => {
             )
         } else {
             let price =
-                data.price - (data.price * data.restaurant_discount) / 100
+                data?.price - (data?.price * data?.restaurant_discount) / 100
             return getAmount(
                 price,
                 currencySymbolDirection,
@@ -102,12 +102,12 @@ const StartPriceView = (props) => {
     // }
 
     const handleDiscountedPriceView = () => {
-        if (data.discount > 0) {
+        if (data?.discount > 0) {
             return (
                 <CustomTypography variant={fontSize ? fontSize : 'h4'}>
                     {data?.price > 0 &&
                         getAmount(
-                            data.price,
+                            data?.price,
                             currencySymbolDirection,
                             currencySymbol,
                             digitAfterDecimalPoint
@@ -135,7 +135,7 @@ const StartPriceView = (props) => {
                     fontSize: { xs: '13px', sm: '16px' },
                 }}
             >
-                {data.price === handleConvertedPrice() ? (
+                {data?.price === handleConvertedPrice() ? (
                     getAmount(
                         data?.price,
                         currencySymbolDirection,
@@ -150,12 +150,12 @@ const StartPriceView = (props) => {
                         color={theme.palette.neutral[400]}
                         sx={{ fontSize: { xs: '13px', sm: '13px' } }}
                     >
-                        {(data.discount > 0 ||
+                        {(data?.discount > 0 ||
                             data?.restaurant_discount !== 0) && (
                             <del>
                                 {' '}
                                 {getAmount(
-                                    data.price,
+                                    data?.price,
                                     currencySymbolDirection,
                                     currencySymbol,
                                     digitAfterDecimalPoint

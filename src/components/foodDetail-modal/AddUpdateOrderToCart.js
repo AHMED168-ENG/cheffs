@@ -11,14 +11,14 @@ const AddUpdateOrderToCart = (props) => {
         <Stack spacing={1}>
             <NotAvailableCard
                 endTime={
-                    modalData.length > 0 && modalData[0].available_time_ends
+                    modalData.length > 0 && modalData[0]?.available_time_ends
                 }
-                endDate={modalData[0].available_date_ends}
+                endDate={modalData[0]?.available_date_ends}
                 startTime={
-                    modalData.length > 0 && modalData[0].available_time_starts
+                    modalData.length > 0 && modalData[0]?.available_time_starts
                 }
             />
-            {modalData.length > 0 && modalData[0].schedule_order && (
+            {modalData.length > 0 && modalData[0]?.schedule_order && (
                 <>
                     {isInCart(product?.id) && (
                         <Button
@@ -54,8 +54,8 @@ const AddUpdateOrderToCart = (props) => {
                                 <Button
                                     disabled={
                                         !isAvailable(
-                                            modalData[0].available_time_starts,
-                                            modalData[0].available_time_ends
+                                            modalData[0]?.available_time_starts,
+                                            modalData[0]?.available_time_ends
                                         )
                                     }
                                     onClick={() => orderNow()}
