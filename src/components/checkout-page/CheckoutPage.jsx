@@ -936,18 +936,18 @@ const CheckoutPage = () => {
                             setUsePartialPayment={setUsePartialPayment}
                             setSwitchToWallet={setSwitchToWallet}
                         />
-                        {page !== 'campaign' &&
+                         {/* {page !== 'campaign' &&
                             subscriptionStates.order === '0' && (
                                 <RestaurantScheduleTime
                                     restaurantData={restaurantData}
                                     handleChange={handleChange}
-                                    today={today}
+                                    today={today} 
                                     tomorrow={tomorrow}
                                     numberOfDay={numberOfDay}
                                     global={global}
                                     setScheduleAt={setScheduleAt}
                                 />
-                            )}
+                            )}  */}
                         {subscriptionStates.order === '0' &&
                             orderType !== 'take_away' &&
                             Number.parseInt(global?.dm_tips_status) === 1 && (
